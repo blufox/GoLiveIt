@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/event_share"
+        android:icon="@drawable/ic_share_white_48dp"
+        android:orderInCategory="1"
+        android:title="share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/event_favorite"
+        android:icon="@drawable/star_unstarred"
+        android:orderInCategory="1"
+        android:title="favorite"
+        app:showAsAction="always" />
+
+
+</menu>

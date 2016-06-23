@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llEventDetails_artists"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/civEvent_details_performers_single_performer_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="50dp"
+            app:border="false"
+            app:border_color="#FFFFFF"
+            app:border_width="1dp"
+            app:shadow="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp">
+            <TextView
+                android:id="@+id/tvEvent_details_performers_single_performer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:textSize="14sp"
+                android:text="Elani"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:src="@drawable/caratarrow"
+                android:layout_gravity="right"
+                android:tint="@color/divider"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider" />
+
+</LinearLayout>

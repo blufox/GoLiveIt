@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.captivelabs.goliveit.ui.activities.RecommendedEventActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_upcoming_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/tab_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </include>
+
+
+</LinearLayout>

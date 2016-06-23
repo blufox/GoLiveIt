@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/settingsLayout"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSettings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Connected Music"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvSettings_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSettings_title"
+        android:layout_marginTop="8dp"
+        android:text="Spotify, Device Library, etc"
+        android:textColor="#d3d3d3" />
+
+    <Switch
+        android:id="@+id/swNotification_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

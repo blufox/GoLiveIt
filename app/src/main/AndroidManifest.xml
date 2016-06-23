@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.captivelabs.goliveit" >
+
+    <permission
+        android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.LandingPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.EventDetailsActivity"
+            android:label="@string/title_activity_event_details"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.LandingPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.LandingPage" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.RecommendedEventActivity"
+            android:label="@string/title_activity_recommended_event"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.EventDetailsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.EventDetailsActivity" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.ArtistActivity"
+            android:label="@string/title_activity_artist" />
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.VenueActivity"
+            android:label="Venue" />
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.SplashActivity"
+            android:label="@string/title_activity_splash" />
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.ManageArtist"
+            android:label="@string/title_activity_manage_artist" />
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.ManageArtisanActivity"
+            android:label="@string/title_activity_manage_artisan" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.LocationActivity"
+            android:label="@string/title_activity_location" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.LandingPage" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.ManageMyArtistActivity"
+            android:label="@string/title_activity_manage_my_artist"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.ArtistSearchActivity"
+            android:label="@string/title_activity_manage_my_artist"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.ManageMyArtistActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.ManageArtisanActivity" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+
+
+        <!-- &lt;!&ndash;<activity&ndash;&gt; -->
+        <!-- android:name=".ui.activities.MapsActivity" -->
+        <!-- android:label="@string/title_activity_maps" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.NotificationsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.LandingPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.LandingPage" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.Settings2Activity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.LandingPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.LandingPage" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.UpcomingEventsActivity"
+            android:label="@string/title_activity_upcoming_events"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.ArtistActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.ArtistActivity" />
+        </activity>
+        <activity
+            android:name="me.captivelabs.goliveit.ui.activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="me.captivelabs.goliveit.ui.activities.LandingPage"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.captivelabs.goliveit.ui.activities.LandingPage" />
+        </activity>
+    </application>
+
+</manifest>

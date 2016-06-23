@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/tools"
+    android:id="@+id/rlArtistLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="horizontal">
+
+    <me.captivelabs.goliveit.ui.views.CustomFontTextView
+        android:id="@+id/tvArtistNameInitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/sample_letter"
+        android:visibility="invisible"
+        android:textSize="24sp"
+        customfontdemo:fontName="@string/font_title_bold" />
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/ivArtistPpic"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/tvArtistNameInitial"
+        android:layout_toRightOf="@+id/tvArtistNameInitial"
+        android:padding="50dp"
+        android:src="@drawable/ppic_elani"
+        app:border="false"
+        app:border_color="#FFFFFF"
+        app:border_width="1dp"
+        app:shadow="true" />
+
+    <ImageView
+        android:id="@+id/ivArtistWithShows"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/withshows" />
+
+    <me.captivelabs.goliveit.ui.views.CustomFontTextView
+        android:id="@+id/tvArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/ivArtistPpic"
+        android:layout_toRightOf="@+id/ivArtistPpic"
+        android:text="Dolly Parton"
+        android:textSize="14sp"
+        customfontdemo:fontName="@string/font_title" />
+
+</RelativeLayout>

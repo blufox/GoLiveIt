@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#00000000"
+    android:paddingTop="@dimen/appbar_top_padding"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flSearchToolBar_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llSearchToolBar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivSearchToolBar_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:tint="#ffffff"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <me.captivelabs.goliveit.ui.views.CustomFontTextView
+                android:id="@+id/tvSearchToolBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="EVENTS"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:visibility="invisible"
+                customfontdemo:fontName="@string/font_title" />
+
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:id="@+id/pbAppBar_progress"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                app:cpv_animAutostart="true"
+                app:cpv_color="#ffffff"
+                app:cpv_indeterminate="true"
+                app:cpv_thickness="2dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:padding="5dp"
+                android:tint="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

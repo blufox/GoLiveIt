@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/background"
+    android:paddingTop="@dimen/appbar_top_padding"
+    android:elevation="8dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <me.captivelabs.goliveit.ui.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRecommended_event_title"
+            android:layout_gravity="left"
+            android:text="Africa Noveau Festival"
+            android:textAllCaps="true"
+            android:textColor="#b1b1b1"
+            android:textSize="13dp"
+            customfontdemo:fontName="@string/font_bold" />
+
+        <me.captivelabs.goliveit.ui.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Recommended Events"
+            android:layout_marginTop="-2dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            customfontdemo:fontName="@string/font_bold" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

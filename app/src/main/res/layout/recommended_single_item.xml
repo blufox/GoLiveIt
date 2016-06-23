@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRecommendedEvent"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivRecommendedProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/tvRecommendedEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="00dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/ivRecommendedProfile"
+        android:gravity="left"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:text="Event 2"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRecommendedEventTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRecommendedEventTitle"
+        android:layout_gravity="top"
+        android:layout_marginBottom="00dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/ivRecommendedProfile"
+        android:gravity="left"
+        android:maxLines="4"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:text="Sat, 26 Sept"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

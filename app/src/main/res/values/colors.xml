@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- teel -->
+   <color name="primary">#303D74</color>
+   <color name="primary_dark">#07113A</color>
+   <color name="primary_light">#B2DFDB</color>
+   <color name="accent">#172457</color>
+   <color name="primary_text">#212121</color>
+   <color name="secondary_text">#727272</color>
+   <color name="icons">#FFFFFF</color>
+   <color name="divider">#EEEEEE</color>
+
+    <color name="black">#525252</color>
+    <color name="grey">#b1b1b1</color>
+
+
+    <color name="background">@color/divider</color>
+    <color name="white">#FFFFFF</color>
+
+
+</resources>

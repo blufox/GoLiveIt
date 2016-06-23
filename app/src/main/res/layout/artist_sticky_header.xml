@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <me.captivelabs.goliveit.ui.views.CustomFontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="TUE, SEP 29"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        customfontdemo:fontName="@string/font_bold" />
+

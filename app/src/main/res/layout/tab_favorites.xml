@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@null"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:src="@mipmap/placeholder_favorites" />
+
+    <me.captivelabs.goliveit.ui.views.CustomFontTextView
+        android:id="@+id/tvSearchToolBar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/favorite_events_info"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        customfontdemo:fontName="@string/font_title_bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/popularRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="16dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
